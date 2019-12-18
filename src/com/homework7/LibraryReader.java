@@ -40,7 +40,7 @@ public class LibraryReader {
     }
 
     public void printBookOnDate(Date date) {
-        if (myBooks.get(date) == null) {
+        if (myBooks.get(date) == null) {                                            // IDEA say what `==` better than `equals`
             System.out.println("On this date " + date + " I haven't book");
         } else {
             System.out.println("On this date " + date + " I have - " + myBooks.get(date));
