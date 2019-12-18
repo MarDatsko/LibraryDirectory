@@ -8,25 +8,13 @@ public class LibraryData {
     public static Map<LocalDate,String> library = new HashMap<>();
 
     public static boolean giveBook (LocalDate date, String nameBook){
-        boolean isPutOk;
         library.put(date, nameBook);
-        if (library.containsKey(date)){
-            isPutOk=true;
-        }else {
-            isPutOk=false;
-        }
-        return isPutOk;
+        return library.containsKey(date);
     }
 
     public static boolean acceptBook (LocalDate date, String nameBook){
-        boolean isPutOk;
         library.remove(date,nameBook);
-        if (library.containsKey(date)){
-            isPutOk=false;
-        }else {
-            isPutOk=true;
-        }
-        return isPutOk;
+        return !library.containsKey(date);
     }
 
     public static void allGivenBooks() {
