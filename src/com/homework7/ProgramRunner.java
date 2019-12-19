@@ -29,10 +29,10 @@ public class ProgramRunner {
         petro.getBook(date8, "Ukraine");
 
         System.out.println('\n' + "Books what took Ivan");
-        ivan.printAllMyBook();
+        ivan.printAllMyBooks();
 
         System.out.println('\n' + "Books what took Petro");
-        petro.printAllMyBook();
+        petro.printAllMyBooks();
 
         System.out.println('\n' + "This is Ivan book for a specific date ");
         ivan.printBookOnDate(data1);
