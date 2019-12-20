@@ -9,24 +9,24 @@ public class ProgramRunner {
         LibraryReader ivan = new LibraryReader("Ivan");
         LibraryReader petro = new LibraryReader("Petro");
 
-        Date data1 = new Date(LocalDate.of(2019, 12, 16));
-        Date date2 = new Date(LocalDate.of(2019, 12, 16));
-        Date date3 = new Date(LocalDate.of(2019, 12, 14));
-        Date date4 = new Date(LocalDate.of(2019, 12, 13));
-        Date date5 = new Date(LocalDate.of(2019, 12, 12));
-        Date date6 = new Date(LocalDate.of(2019, 12, 12));
-        Date date7 = new Date(LocalDate.of(2019, 12, 16));
-        Date date8 = new Date(LocalDate.of(2019, 12, 16));
+        Date data12_16_one = new Date(LocalDate.of(2019, 12, 16));
+        Date date12_16_two = new Date(LocalDate.of(2019, 12, 16));
+        Date date12_14 = new Date(LocalDate.of(2019, 12, 14));
+        Date date12_13 = new Date(LocalDate.of(2019, 12, 13));
+        Date date12_12_one = new Date(LocalDate.of(2019, 12, 12));
+        Date date12_12_two = new Date(LocalDate.of(2019, 12, 12));
+        Date date12_16_three = new Date(LocalDate.of(2019, 12, 16));
+        Date date12_16_four = new Date(LocalDate.of(2019, 12, 16));
 
-        ivan.getBook(data1, "Don Quixote");
-        ivan.getBook(date2, "Moby Dick");
-        ivan.getBook(date3, "War and Peace");
-        ivan.getBook(date4, "Hamlet");
+        ivan.getBook(data12_16_one, "Don Quixote");
+        ivan.getBook(date12_16_two, "Moby Dick");
+        ivan.getBook(date12_14, "War and Peace");
+        ivan.getBook(date12_13, "Hamlet");
 
-        petro.getBook(date5, "Lolita");
-        petro.getBook(date6, "Germany");
-        petro.getBook(date7, "Russia");
-        petro.getBook(date8, "Ukraine");
+        petro.getBook(date12_12_one, "Lolita");
+        petro.getBook(date12_12_two, "Germany");
+        petro.getBook(date12_16_three, "Russia");
+        petro.getBook(date12_16_four, "Ukraine");
 
         System.out.println('\n' + "Books what took Ivan");
         ivan.printAllMyBooks();
@@ -35,14 +35,14 @@ public class ProgramRunner {
         petro.printAllMyBooks();
 
         System.out.println('\n' + "This is Ivan book for a specific date ");
-        ivan.printBookOnDate(data1);
+        ivan.printBookOnDate(data12_16_one);
 
         System.out.println('\n' + "All books, what given library");
         allGivenBooks();
 
         System.out.println('\n' + "Ivan return two books");
-        ivan.returnBook(date4, "Hamlet");
-        ivan.returnBook(date3, "War and Peace");
+        ivan.returnBook(date12_13, "Hamlet");
+        ivan.returnBook(date12_14, "War and Peace");
 
         System.out.println('\n' + "All books, what given library");
         allGivenBooks();
