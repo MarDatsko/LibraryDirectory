@@ -6,13 +6,13 @@ import java.util.Map;
 public class Library {
     public static Map<Date, String> library = new HashMap<>();
 
-    public static boolean giveBook(Date date, String nameBook) {
-        library.put(date, nameBook);
+    public static boolean giveBook(Date date, String bookName) {
+        library.put(date, bookName);
         return library.containsKey(date);
     }
 
-    public static boolean acceptBook(Date date, String nameBook) {
-        library.remove(date, nameBook);
+    public static boolean acceptBook(Date date, String bookName) {
+        library.remove(date, bookName);
         return !library.containsKey(date);
     }
 

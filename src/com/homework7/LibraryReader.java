@@ -13,17 +13,17 @@ public class LibraryReader {
         this.readerName = readerName;
     }
 
-    public void getBook(Date date, String nameBook) {
-        if (giveBook(date, nameBook)) {
-            myBooks.put(date, nameBook);
+    public void getBook(Date date, String bookName) {
+        if (giveBook(date, bookName)) {
+            myBooks.put(date, bookName);
         } else {
             System.out.println("Book is not available today");
         }
     }
 
-    public void returnBook(Date date, String nameBook) {
-        if (acceptBook(date, nameBook)) {
-            myBooks.remove(date, nameBook);
+    public void returnBook(Date date, String bookName) {
+        if (acceptBook(date, bookName)) {
+            myBooks.remove(date, bookName);
         } else {
             System.out.println("Your book is not accept");
         }

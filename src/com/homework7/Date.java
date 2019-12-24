@@ -6,11 +6,11 @@ import java.util.Random;
 
 public class Date {
     private LocalDate date;
-    private Integer rand;
+    private Integer randomNumber;
 
     public Date(LocalDate date) {
         this.date = date;
-        this.rand = new Random().nextInt(100000000);
+        this.randomNumber = new Random().nextInt(100000000);
     }
 
     @Override
@@ -23,7 +23,7 @@ public class Date {
 
     @Override
     public int hashCode() {
-        return Objects.hash(date) * rand.hashCode();
+        return Objects.hash(date) * randomNumber.hashCode();
     }
 
     @Override
