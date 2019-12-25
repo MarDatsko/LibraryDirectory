@@ -1,8 +1,8 @@
 package com.homework7;
 
 import java.time.LocalDate;
-import static com.homework7.Library.allGivenBooks;
-import static com.homework7.Library.returnCountBooksOnDate;
+
+import static com.homework7.Library.*;
 
 public class ProgramRunner {
     public void runProgram(){
@@ -38,19 +38,19 @@ public class ProgramRunner {
         ivan.printBookOnDate(data12_16_one);
 
         System.out.println('\n' + "All books, what given library");
-        allGivenBooks();
+        showAllGivenBooks();
 
         System.out.println('\n' + "Ivan return two books");
         ivan.returnBook(date12_13, "Hamlet");
         ivan.returnBook(date12_14, "War and Peace");
 
         System.out.println('\n' + "All books, what given library");
-        allGivenBooks();
+        showAllGivenBooks();
 
         System.out.println('\n' + "Number of books what given Library on specific date");
-        System.out.println(returnCountBooksOnDate(new Date(LocalDate.of(2019, 12, 16))));
-        System.out.println(returnCountBooksOnDate(new Date(LocalDate.of(2019, 12, 10))));
-        System.out.println(returnCountBooksOnDate(new Date(LocalDate.of(2019, 12, 14))));
-        System.out.println(returnCountBooksOnDate(new Date(LocalDate.of(2019, 12, 12))));
+        System.out.println(getCountBooksOnDate(new Date(LocalDate.of(2019, 12, 16))));
+        System.out.println(getCountBooksOnDate(new Date(LocalDate.of(2019, 12, 10))));
+        System.out.println(getCountBooksOnDate(new Date(LocalDate.of(2019, 12, 14))));
+        System.out.println(getCountBooksOnDate(new Date(LocalDate.of(2019, 12, 12))));
     }
 }

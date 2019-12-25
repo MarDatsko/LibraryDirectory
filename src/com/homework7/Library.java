@@ -16,7 +16,7 @@ public class Library {
         return !library.containsKey(date);
     }
 
-    public static String returnCountBooksOnDate(Date date) {
+    public static String getCountBooksOnDate(Date date) {
         int count = 0;
         if (library.isEmpty()) {
             System.out.println("Library didn't give books ");
@@ -30,7 +30,7 @@ public class Library {
         return date + " - " + count;
     }
 
-    public static void allGivenBooks() {
+    public static void showAllGivenBooks() {
         if (library.isEmpty()) {
             System.out.println("Library didn't give books ");
         } else {
