@@ -9,24 +9,24 @@ public class ProgramRunner {
         LibraryReader ivan = new LibraryReader("Ivan");
         LibraryReader petro = new LibraryReader("Petro");
 
-        Date data12_16_one = new Date(LocalDate.of(2019, 12, 16));
-        Date date12_16_two = new Date(LocalDate.of(2019, 12, 16));
+        Date date12_16FirstBook = new Date(LocalDate.of(2019, 12, 16));
+        Date date12_16SecondBook = new Date(LocalDate.of(2019, 12, 16));
         Date date12_14 = new Date(LocalDate.of(2019, 12, 14));
         Date date12_13 = new Date(LocalDate.of(2019, 12, 13));
-        Date date12_12_one = new Date(LocalDate.of(2019, 12, 12));
-        Date date12_12_two = new Date(LocalDate.of(2019, 12, 12));
-        Date date12_16_three = new Date(LocalDate.of(2019, 12, 16));
-        Date date12_16_four = new Date(LocalDate.of(2019, 12, 16));
+        Date date12_12FirstBook = new Date(LocalDate.of(2019, 12, 12));
+        Date date12_12SecondBook = new Date(LocalDate.of(2019, 12, 12));
+        Date date12_16ThirdBook = new Date(LocalDate.of(2019, 12, 16));
+        Date date12_16FourthBook = new Date(LocalDate.of(2019, 12, 16));
 
-        ivan.getBook(data12_16_one, "Don Quixote");
-        ivan.getBook(date12_16_two, "Moby Dick");
+        ivan.getBook(date12_16FirstBook, "Don Quixote");
+        ivan.getBook(date12_16SecondBook, "Moby Dick");
         ivan.getBook(date12_14, "War and Peace");
         ivan.getBook(date12_13, "Hamlet");
 
-        petro.getBook(date12_12_one, "Lolita");
-        petro.getBook(date12_12_two, "Germany");
-        petro.getBook(date12_16_three, "Russia");
-        petro.getBook(date12_16_four, "Ukraine");
+        petro.getBook(date12_12FirstBook, "Lolita");
+        petro.getBook(date12_12SecondBook, "Germany");
+        petro.getBook(date12_16ThirdBook, "Russia");
+        petro.getBook(date12_16FourthBook, "Ukraine");
 
         System.out.println('\n' + "Books what took Ivan");
         ivan.printAllMyBooks();
@@ -35,7 +35,7 @@ public class ProgramRunner {
         petro.printAllMyBooks();
 
         System.out.println('\n' + "This is Ivan book for a specific date ");
-        ivan.printBookOnDate(data12_16_one);
+        ivan.printBookOnDate(date12_16FirstBook);
 
         System.out.println('\n' + "All books, what given library");
         showAllGivenBooks();
